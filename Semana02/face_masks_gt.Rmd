@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-# Masks Guatemala
+# Masks Guatemala {style="color: blue;"}
 
 ## COVID 19 pandemic
 
