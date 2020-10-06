@@ -11,10 +11,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 <p align="center">
-  <img src="https://github.com/waldyr/Sublime-Installer/blob/master/sublime_text.png?raw=true" alt="Sublime's custom image"/>
+  <img src="https://github.com/wparedesgt/data_products/blob/master/Semana02/imagen/datosgt_logo.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
-# Masks Guatemala {style="color: blue;"}
+# Masks Guatemala {style="color: darkblue;"}
 
 ## COVID 19 pandemic {style="color: black;"}
 
@@ -35,6 +35,13 @@ resumen_mapa <- datos_tl %>% group_by(longitud, latitud) %>% summarise(total = s
 ```
 
 
+<style>
+.html-widget {
+    margin: auto;
+}
+</style>
+
+
 ```{r echo=FALSE} 
 
 
@@ -51,3 +58,5 @@ resumen_mapa %>%
   addCircles(lng = ~longitud, lat = ~latitud, weight = 1, radius = ~total * 2)
 ```
 
+
+Initially, the central area was the most affected, so government authorities began giving away masks to the population, focusing on the most needy and vulnerable people.
