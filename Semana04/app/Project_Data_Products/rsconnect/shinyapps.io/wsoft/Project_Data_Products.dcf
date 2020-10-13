@@ -1,0 +1,12 @@
+name: Project_Data_Products
+title: Project_Data_Products
+username:
+account: wsoft
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3006259
+bundleId: 3735941
+url: https://wsoft.shinyapps.io/Project_Data_Products/
+when: 1602612797.99799
+asMultiple: FALSE
+asStatic: FALSE
