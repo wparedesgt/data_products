@@ -7,10 +7,19 @@ sidebar <- dashboardSidebar(
     sidebarUserPanel(name = "Data Products Project", subtitle = "William V. Paredes"),
     
     sidebarMenu(
-        menuItem("Analisis", tabName = "Analisis", 
+        menuItem("Analysis", tabName = "Analisis", 
                  icon = icon("chart-bar")),
-        menuItem("Modelos Predictivos", tabName = "Forecast", 
-                 icon = icon("chart-line"))
+        menuItem("Predictive Model", tabName = "Forecast", 
+                 icon = icon("chart-line")),
+        dateRangeInput(inputId = "rngDatos", 
+                       label = "Data Range:", 
+                       start = "2020-03-14",
+                       end = Sys.Date(), 
+                       min = '2020-03-14',
+                       max = Sys.Date(), 
+                       language = "en", 
+                       separator = "to"),
+        submitButton("Renew View")
         
         
     )    

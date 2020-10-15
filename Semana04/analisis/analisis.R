@@ -15,27 +15,19 @@ CargaDatosWeb01 <- function() {
 datos <- CargaDatosWeb01()
 
 datos$total_tests <- NULL
-datosgt$new_tests <- NULL
-datosgt$total_tests_per_thousand <- NULL
-datosgt$new_tests_per_thousand <- NULL
-datosgt$new_tests_smoothed <- NULL
-datosgt$new_tests_smoothed_per_thousand <- NULL
-datosgt$tests_units <- NULL
-datosgt$male_smokers <- NULL
-datosgt$female_smokers <- NULL
+datos$new_tests <- NULL
+datos$total_tests_per_thousand <- NULL
+datos$new_tests_per_thousand <- NULL
+datos$new_tests_smoothed <- NULL
+datos$new_tests_smoothed_per_thousand <- NULL
+datos$tests_units <- NULL
+datos$male_smokers <- NULL
+datos$female_smokers <- NULL
 
-datos_ca$total_tests <- NULL
-datos_ca$new_tests <- NULL
-datos_ca$total_tests_per_thousand <- NULL
-datos_ca$new_tests_per_thousand <- NULL
-datos_ca$new_tests_smoothed <- NULL
-datos_ca$new_tests_smoothed_per_thousand <- NULL
-datos_ca$tests_units <- NULL
-datos_ca$male_smokers <- NULL
-datos_ca$female_smokers <- NULL
 
 datosgt <- datos %>% filter(iso_code == "GTM")
 datos_ca <- datos %>% filter(iso_code %in% c("GTM","SLV","HND","NIC","CRI"))
 
 
+tail(datosgt$total_cases_per_million,1)
 
