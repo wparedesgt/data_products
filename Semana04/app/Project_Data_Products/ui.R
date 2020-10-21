@@ -49,12 +49,6 @@ body <- dashboardBody(
                     height = 450, 
                     highchartOutput("HC_plot_02")
                 )
-            ), 
-            fluidRow(
-                box(width = 10,
-                    height = 450, 
-                    highchartOutput("HC_plot_03")
-                )
             )
         ),
         tabItem(

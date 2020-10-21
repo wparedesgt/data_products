@@ -3,9 +3,12 @@
 
 library(tidyverse)
 library(shiny)
+library(lubridate)
 library(shinydashboard)
 library(highcharter)
 library(googleVis)
+library(forecast)
+library(ggfortify)
 
 #Carga datos Covid19
 
@@ -29,6 +32,22 @@ datos$tests_units <- NULL
 datos$male_smokers <- NULL
 datos$female_smokers <- NULL
 
+datos$date <- as.Date(datos$date)
+
+
+datos <- datos %>% filter(iso_code %in% c("GTM","SLV","HND","NIC","CRI", "PAN"))
+
+CargaDatos <- function(fecha_inicio, fecha_fin) {
+  
+  datos_filtrados <- datos  %>% filter(datos$date >= fecha_inicio & datos$date <= fecha_fin)
+
+  return(datos_filtrados)
+    
+}
+
+
 
 datosgt <- datos %>% filter(iso_code == "GTM")
-datos_ca <- datos %>% filter(iso_code %in% c("GTM","SLV","HND","NIC","CRI"))
+
+
+
