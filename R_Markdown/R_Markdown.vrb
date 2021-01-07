@@ -1,0 +1,22 @@
+\frametitle{Generating Slideshows}
+\protect\hypertarget{generating-slideshows-1}{}
+
+\begin{itemize}
+\tightlist
+\item
+  HTML: two options with different looks
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \texttt{output:\ ioslides\_presentation}
+  \item
+    \texttt{output:\ slidy\_presentation}
+  \end{itemize}
+\item
+  PDF: \texttt{output:\ beamer\_presentation}\\
+\item
+  Note: You can specify multiple outputs at the beginning of the R
+  Markdown file if you will need to generate multiple filetypes.
+\end{itemize}
+
